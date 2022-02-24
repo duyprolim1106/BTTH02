@@ -1,0 +1,3 @@
+.row{
+    margin-left: calc(-8.5 * var(--bs-gutter-x));
+}
