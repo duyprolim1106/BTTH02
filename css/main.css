@@ -41,9 +41,224 @@
     justify-content: space-around;
 }
 
-.form-register{
+/* CSS for form register */
+#form_register {
+    margin-top: 40px;
+    padding-top: 30px;
+    height: 872px;
+    background: rgb(0, 13, 117);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 13, 117, 1) 6%,
+      rgba(101, 55, 154, 1) 64%
+    );
+  }
+  #form_register .container .row {
+    margin-top: 30px;
     width: 100%;
-    height: 950px;
-}
+  }
+  #form_register .container .row .col .mb-3 h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffff;
+    font-size: 1.5rem;
+  }
+  #form_register .container .row .col .mb-3 h5 {
+    border: 2px solid #f5ec10;
+    font-weight: 600;
+    border-width: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f5ec10;
+    margin: 0 7rem;
+    padding: 0.5rem 3srem;
+    font-weight: bolder;
+    font-size: 1.75rem;
+  }
+  #form_register .container .row .col .mb-3 a {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #edb017;
+    color: #0a0a0a;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 0.5rem 0rem;
+  }
+  #form_register .container .row .col .mb-3 a:hover {
+    background-color: #008fca;
+    color: #fff;
+  }
+  #form_register .container .col img {
+    height: 80%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .list-count {
+    margin-top: -4rem !important;
+  }
+  .tmp .count {
+    position: relative;
+    padding: 0rem 1rem;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #ffc307;
+    font-weight: 700;
+  }
+  .tmp .count span {
+    font-size: 2rem;
+  }
+  .tmp .count::before {
+    content: "";
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    width: 3px;
+    height: 40%;
+    background-color: #fff;
+  }
+  .tmp p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+  }
 
+/* CSS for introduce2 */
 
+#introduce2 {
+    width: 100%;
+    height: 410px;
+    padding-top: 20px;
+  }
+  #introduce2 .container {
+    height: 100%;
+  }
+  #introduce2 .child {
+    align-items: center;
+  }
+  #introduce2 .col-md-8 .col-12 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  #introduce2 .border-right {
+    border-right: 2px solid #edb017;
+    padding: 2rem 2rem;
+  }
+  #introduce2 .border-right h4 {
+    color: #0b249e;
+    font-size: 2rem;
+  }
+  #introduce2 .col-md-7 p {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5rem;
+    font-style: italic;
+  }
+  .btn-primary {
+    vertical-align: baseline;
+    font-size: 100%;
+    background-color: #0c9841;
+    color: white;
+    border-radius: 5px;
+    padding: 14px 20px 14px 20px;
+    line-height: 1.3rem;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #ff7b06;
+    hyphens: manual;
+  }
+
+  /* CSS for introduce 3 */
+  #introduce3 {
+    height: 600px;
+    padding-top: 5rem;
+    background: rgb(25, 57, 180);
+    background: linear-gradient(
+      180deg,
+      rgba(25, 57, 180, 1) 7%,
+      rgba(18, 155, 186, 1) 100%
+    );
+  }
+  #introduce3 video {
+    width: 100%;
+    margin-right: 1rem;
+    height: auto;
+  }
+  .col > p {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+  }
+  .introduce3-box {
+    display: flex;
+    justify-content: center;
+  }
+  .introduce3-box .box-icon {
+    margin-top: 1rem;
+    aspect-ratio: 1;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #008fca;
+    margin-right: 1rem;
+  }
+  .introduce3-box .box-icon i {
+    font-size: 3rem;
+  }
+  .introduce3-box .box-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: white;
+  }
+  .introduce3-box .box-content p {
+    color: white;
+    font-size: 1rem;
+  }
+
+  /* CSS for introduce 4 */
+  #introduce4 {
+    margin-bottom: 5%;
+    margin-bottom: 5%;
+    height: 190px;
+    width: 100%;
+    align-content: flex-start;
+    padding: 10% 0 10% 0;
+    font-weight: 600;
+  }
+  #introduce4 p {
+    width: 100%;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #introduce4 h3 {
+    width: 100%;
+    margin-top: 28.35px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  #introduce4 a {
+    color: #000;
+    line-height: 1.5em;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  #introduce4 .box-introduce4 {
+    text-align: center;
+    background-color: #fff006;
+    display: flex;
+    justify-content: center;
+    margin: 0 25%;
+  }
