@@ -1,333 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>HANOI-APTECH</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>HANOI-APTECH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="row" style="margin-left: calc(-0.9 * var(--bs-gutter-x));">
-                <div class="col">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
-                          <a class="navbar-brand" href="#">
-                              <img src="images/logo1.png" alt="">
-                          </a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  HANOI-APTECH
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="gioithieu.html">Giới thiệu</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Cơ sở vật chất</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Giảng viên</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Hỏi đáp</a></li>
-                                </ul>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Chương trình đào tạo
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Lập trình viên quốc tế ADSE</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Lập trình Web Fullstack</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Các khóa ngắn hạn</a></li>
-                                </ul>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Liên thông</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Tin tức
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Tin về CNTT</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Lịch thi</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Lịch tuyển sinh</a></li>
-                                </ul>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Tuyển dụng
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Tin tuyển dụng</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Góc nghề nghiệp</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
+  <header>
+    <div class="container">
+      <div class="row" style="margin-left: calc(-0.9 * var(--bs-gutter-x));">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo1.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      HANOI-APTECH
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="gioithieu.html">Giới thiệu</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Cơ sở vật chất</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Giảng viên</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Hỏi đáp</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Chương trình đào tạo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Lập trình viên quốc tế ADSE</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Lập trình Web Fullstack</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Các khóa ngắn hạn</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Liên thông</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Tin tức
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Tin về CNTT</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Lịch thi</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Lịch tuyển sinh</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Tuyển dụng
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Tin tuyển dụng</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Góc nghề nghiệp</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide0.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide2.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="introduce">
+    <div class="introduce--header">
+      <p style="color:#3E3D3D;">20 năm kinh nghiệm đào tạo lập trình</p>
+      <p style="color: black; font-size: 16px">Là đơn vị số 1 về đào tạo CNTT tại Việt Nam</p>
+    </div>
+    <div class="introduce--card">
+      <div class="introduce--card1">
+        <div class="card" style="width: 18rem;">
+          <img src="images/introduce_img_1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hanoi Aptech có 20 năm kinh nghiệm đào tạo lập trình và các lĩnh vực trong ngành CNTT.
+              Chương trình học chuẩn Aptech Quốc Tế với phương pháp dạy hiện đai, tập trung thực hành, làm dự án thực
+              tế.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/introduce_img_2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Giảng viên giàu nhiều kinh nghiệm làm việc tại các công ty lớn về CNTT và đang giảng
+              dạy tại các trường Đại Học. Học viên được bảo hành 100% học phí, miễn phí tham gia các lớp dự thính.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/introduce_img_2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Bằng Aptech được công nhận trên 50 Quốc Gia. Hanoi Aptech cam kết 100% có việc làm đúng
+              ngành nghề. Kết thúc khóa học, học viên có thể chọn liên thông ĐH hoặc du học Quốc Tế.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- form register -->
+  <section id="form_register">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="mb-3">
+            <h4>bứt phá sự nghiệp cho năm 2022</h4>
+            <h5>học bổng 25.000.000 VND</h5>
+          </div>
+          <div class="mb-3">
+            <input class="form-control" id="exampleFormControlInput1" placeholder="Họ và Tên" />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Số điện thoại" />
+          </div>
+          <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Trình độ</option>
+              <option value="1">Học sinh</option>
+              <option value="2">Sinh viên</option>
+              <option value="3">Đi làm</option>
+              <option value="3">Khác</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Lời nhắn" rows="4"></textarea>
+          </div>
+          <div class="mb-3">
+            <a href="#">GỬI ĐĂNG KÝ</a>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/img_register.png" class="rounded float-end" alt="" />
+        </div>
+      </div>
+      <div class="row list-count">
+        <div class="col">
+          <div class="tmp">
+            <div class="count">20 <span>Năm</span></div>
+            <p>KINH NGHIỆM</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tmp">
+            <div class="count">40 <span>+</span></div>
+            <p>QUỐC GIA</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tmp">
+            <div class="count">100 <span>%</span></div>
+            <p>CÓ VIỆC LÀM</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tmp">
+            <div class="count">10 <span>NGHÌN</span></div>
+            <p>HỌC VIÊN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- introduce 2 -->
+  <div id="introduce2">
+    <div class="container d-flex align-items-center">
+      <div class="row child text-center">
+        <div class="col-md-5 border-right">
+          <h4>TẬP ĐOÀN APTECH</h4>
+          <h5>20 NĂM TIÊN PHONG ĐÀO TẠO LẬP TRÌNH TẠI VIỆT NAM</h5>
+        </div>
+        <div class="col-md-7">
+          <p>
+            “We don’t keep up with technology. We stay ahead of it – Chúng
+            tôi không chạy theo công nghệ. Chúng tôi đón đầu công nghệ!”
+          </p>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">
+              THAM GIA KHÓA HỌC
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- introduce 3 -->
+  <div id="introduce3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <video controls>
+            <source src="video/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col">
+          <p>LẬP TRÌNH ĐỂ THAY ĐỔI TƯƠNG LAI</p>
+          <div class="introduce3-box">
+            <div class="box-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="box-content">
+              <h3>PHÁT TRIỂN TƯ DUY SÁNG TẠO</h3>
+              <p>
+                Lập trình giúp bạn phát huy tối đa tư duy logic của bản thân
+                và giúp bạn nhạy bén trong việc giải quyết vấn đề.
+              </p>
+            </div>
+          </div>
+          <div class="introduce3-box">
+            <div class="box-icon">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="box-content">
+              <h3>CÓ NHIỀU CƠ HỘI VIỆC LÀM</h3>
+              <p>
+                Thị trường trong và ngoài nước luôn "khát" nguồn nhân lực.
+                Tính đến năm 2021 Việt Nam thiếu 450000 ngành CNTT.
+              </p>
+            </div>
+          </div>
+          <div class="introduce3-box">
+            <div class="box-icon">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <div class="box-content">
+              <h3>LƯƠNG CAO NHIỀU ĐÃI NGỘ</h3>
+              <p>
+                Lương của ngành CNTT luôn nằm trong TOP các ngành lương cao
+                trên Thế Giới.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- introduce 4 -->
+  <div id="introduce4">
+    <p>Bạn có đam mê với nghề lập trình</p>
+    <h3>NHƯNG KHÔNG BIẾT BẮT ĐẦU TỪ ĐÂU?</h3>
+    <div class="box-introduce4">
+      <a href="#">Nhận tư vấn lộ trình phù hợp với bạn!</a>
+    </div>
+  </div>
+
+  <!-- introduce 5 -->
+  <div id="introduce5">
+    <div>
+      <h2>LÝ DO BẠN NÊN HỌC LẬP TRÌNH TẠI HANOI APTECH</h2>
+    </div>
+    <div class="container px-4">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col col-introduce5">
+          <div class="p-3 border bg-light">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://aptech.vn/wp-content/uploads/2021/03/gold-medal.svg" class="img-fluid rounded-start"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">SỐ 1 VỀ ĐÀO TẠO CNTT TẠI VN</h5>
+                    <p class="card-text">
+                      Aptech tư hào 17 năm liên tiếp đạt danh hiệu Đơn vị
+                      đào tạo số 1 về CNTT tại Việt Nam. Phát triển chất
+                      lượng giáo dục trên hơn 40 Quốc Gia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://aptech.vn/wp-content/uploads/2021/01/certificate.svg"
+                    class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">BẰNG CẤP QUỐC TẾ</h5>
+                    <p class="card-text">
+                      Bằng và chứng chỉ lập trình của Atech được công nhận
+                      rộng khắp và tăng cường lợi thế cạnh tranh tương lai
+                      cho học viên trong lĩnh vực CNTT.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://aptech.vn/wp-content/uploads/2021/03/education.svg" class="img-fluid rounded-start"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">20 NĂM KINH NGHIỆM ĐÀO TẠO</h5>
+                    <p class="card-text">
+                      Được thành lập từ năm 2001, Hanoi - Aptech đã có 20
+                      năm kinh nghiệm trong đào tạo chất lượng về Lập trình
+                      và các lĩnh vực trong CNTT.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://aptech.vn/wp-content/uploads/2021/01/cooperation.svg"
+                    class="img-fluid rounded-start" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">CAM KẾT 100% CÓ VIỆC LÀM</h5>
+                    <p class="card-text">
+                      Hanoi Aptech có nhiều doanh nghiệp trong CNTT là đối
+                      tác, vì vậy học viên được tuyển dụng ngay trong quá
+                      trình học với mức lương từ 8 triệu.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://aptech.vn/wp-content/uploads/2021/01/books.svg" class="img-fluid rounded-start"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">CHƯƠNG TRÌNH HỌC TOÀN DIỆN</h5>
+                    <p class="card-text">
+                      Chương trình chuẩn Aptech Quốc Tế. Luôn cập nhập công
+                      nghệ mới nhất, kết hợp lý thuyết và trải nghiệm thực
+                      hành.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://aptech.vn/wp-content/uploads/2021/01/medal.svg" class="img-fluid rounded-start"
+                    alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">GIẢNG VIÊN NHIỀU KINH NGHIỆM</h5>
+                    <p class="card-text">
+                      Giảng viên giàu kinh nghiệm, trình độ chuyên môn cao
+                      và tham gia chương trình đào tạo chuyên môn của
+                      Aptech.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="primary-one">
+      <button type="submit" class="btn btn-primary">
+        THAM GIA KHÓA HỌC
+      </button>
+    </div>
+  </div>
+
+  <!-- introduce 6 -->
+  <div id="introduce6">
+    <h4>TIN TỨC HANOI APTECH</h4>
+    <div class="nav introduce6-nav">
+      <div class="card" style="width: 15rem">
+        <img src="images/introduce6_img1.jpg" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">
+            Aptech hợp tác triển khai chương trình chất lượng cao cùng Đại
+            học Thủy Lợi
+          </p>
+          <a href="#" class="btn btn-primary">Đọc thêm...</a>
+        </div>
+      </div>
+      <div class="card" style="width: 15rem">
+        <img src="images/introduce6_img2.jpg" class="card-img-top" alt="" />
+        <div class="card-body" id="pp2">
+          <h5 class="card-title"> </h5>
+          <p class="card-text" id="p2">
+            CHÀO XUÂN 2022 - RINH LÌ XÌ SIÊU XỊN CÙNG APTECH
+          </p>
+          <a href="#" class="btn btn-primary">Đọc thêm...</a>
+        </div>
+      </div>
+      <div class="card" style="width: 15rem">
+        <img src="images/introduce6_img3.png" class="card-img-top" alt="" />
+        <div class="card-body" id="pp2">
+          <h5 class="card-title"></h5>
+          <p class="card-text">
+            Cơ hội lấy Bằng Anh Quốc lĩnh vực CNTT trong tầm tay bạn!
+          </p>
+          <a href="#" class="btn btn-primary">Đọc thêm...</a>
+        </div>
+      </div>
+      <div class="card" style="width: 15rem">
+        <img src="images/introduce6_img4.jpg" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">
+            Tiếng anh chuyên ngành Công Nghệ Thông Tin có quan trọng không?
+          </p>
+          <a href="#" class="btn btn-primary">Đọc thêm... </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- introduce 7 -->
+  <div id="introduce7">
+    <h2>ĐỐI TÁC CỦA HANOI APTECH</h2>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/slide0.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/slide1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/slide2.png" class="d-block w-100" alt="...">
-          </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/introduce7_img6.png" class="d-block w-100" alt="..." />
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <div class="introduce">
-        <div class="introduce--header">
-          <p style="color:#3E3D3D;">20 năm kinh nghiệm đào tạo lập trình</p>
-          <p style="color: black; font-size: 16px">Là đơn vị số 1 về đào tạo CNTT tại Việt Nam</p>
+        <div class="carousel-item">
+          <img src="images/introduce7_img7.png" class="d-block w-100" alt="..." />
         </div>
-        <div class="introduce--card">
-          <div class="introduce--card1">
-            <div class="card" style="width: 18rem;">
-              <img src="images/introduce_img_1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Hanoi Aptech có 20 năm kinh nghiệm đào tạo lập trình và các lĩnh vực trong ngành CNTT. Chương trình học chuẩn Aptech Quốc Tế với phương pháp dạy hiện đai, tập trung thực hành, làm dự án thực tế.</p>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="images/introduce_img_2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Giảng viên giàu nhiều kinh nghiệm làm việc tại các công ty lớn về CNTT và đang giảng dạy tại các trường Đại Học. Học viên được bảo hành 100% học phí, miễn phí tham gia các lớp dự thính.</p>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="images/introduce_img_2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Bằng Aptech được công nhận trên 50 Quốc Gia. Hanoi Aptech cam kết 100% có việc làm đúng ngành nghề. Kết thúc khóa học, học viên có thể chọn liên thông ĐH hoặc du học Quốc Tế.</p>
-              </div>
-            </div>
-          </div>
+        <div class="carousel-item">
+          <img src="images/introduce7_img1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/introduce7_img2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="https://aptech.vn/wp-content/uploads/2021/01/logo.svg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/introduce7_img3.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/introduce7_img4.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/introduce7_img5.png" class="d-block w-100" alt="..." />
         </div>
       </div>
-      <!-- form register -->
-        <section id="form_register">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <h4>bứt phá sự nghiệp cho năm 2022</h4>
-                  <h5>học bổng 25.000.000 VND</h5>
-                </div>
-                <div class="mb-3">
-                  <input
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Họ và Tên"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Số điện thoại"
-                  />
-                </div>
-                <div class="mb-3">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Trình độ</option>
-                    <option value="1">Học sinh</option>
-                    <option value="2">Sinh viên</option>
-                    <option value="3">Đi làm</option>
-                    <option value="3">Khác</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Lời nhắn"
-                    rows="4"
-                  ></textarea>
-                </div>
-                <div class="mb-3">
-                  <a href="#">GỬI ĐĂNG KÝ</a>
-                </div>
-              </div>
-              <div class="col">
-                <img src="images/img_register.png" class="rounded float-end" alt="" />
-              </div>
-            </div>
-            <div class="row list-count">
-              <div class="col">
-                <div class="tmp">
-                  <div class="count">20 <span>Năm</span></div>
-                  <p>KINH NGHIỆM</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="tmp">
-                  <div class="count">40 <span>+</span></div>
-                  <p>QUỐC GIA</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="tmp">
-                  <div class="count">100 <span>%</span></div>
-                  <p>CÓ VIỆC LÀM</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="tmp">
-                  <div class="count">10 <span>NGHÌN</span></div>
-                  <p>HỌC VIÊN</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-        <!-- introduce 2 -->
-        <div id="introduce2">
-          <div class="container d-flex align-items-center">
-            <div class="row child text-center">
-              <div class="col-md-5 border-right">
-                <h4>TẬP ĐOÀN APTECH</h4>
-                <h5>20 NĂM TIÊN PHONG ĐÀO TẠO LẬP TRÌNH TẠI VIỆT NAM</h5>
-              </div>
-              <div class="col-md-7">
-                <p>
-                  “We don’t keep up with technology. We stay ahead of it – Chúng
-                  tôi không chạy theo công nghệ. Chúng tôi đón đầu công nghệ!”
-                </p>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">
-                    THAM GIA KHÓA HỌC
-                  </button>
-                </div>
-              </div>
-            </div>
+    <!-- introduce 8 -->
+    <div id="introduce8">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5>KHÓA HỌC SẮP KHAI GIẢNG</h5>
+            <ul>
+              <li><a href="#"> Lập trình viên quốc tế</a></li>
+              <li><a href="#"> Lập trình Web Full-Stack</a></li>
+              <li><a href="#"> Khóa học Lập trình Java</a></li>
+              <li><a href="#"> Khóa học Lập trình C#</a></li>
+            </ul>
           </div>
-        </div>
-
-        <!-- introduce 3 -->
-        <div id="introduce3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <video controls>
-                  <source src="video/video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="col">
-                <p>LẬP TRÌNH ĐỂ THAY ĐỔI TƯƠNG LAI</p>
-                <div class="introduce3-box">
-                  <div class="box-icon"><i class="fa-solid fa-brain"></i></div>
-                  <div class="box-content">
-                    <h3>PHÁT TRIỂN TƯ DUY SÁNG TẠO</h3>
-                    <p>
-                      Lập trình giúp bạn phát huy tối đa tư duy logic của bản thân
-                      và giúp bạn nhạy bén trong việc giải quyết vấn đề.
-                    </p>
+          <div class="col">
+            <h5>LIÊN HỆ</h5>
+            <ul>
+              <li>
+                <a href="#">Địa chỉ: Tầng 1, Tòa nhà C5, Đại học Thủy Lợi, 175 Tây
+                  Sơn, Trung Liệt, Đống Đa, Hà Nội</a>
+              </li>
+              <li><a href="#">Tell: (024) 3563 7511</a></li>
+              <li><a href="#">Hotline: 038 2020 858</a></li>
+              <li><a href="#">Mail: infor@aptech.vn</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <h4>ĐĂNG KÝ TƯ VẤN</h4>
                   </div>
-                </div>
-                <div class="introduce3-box">
-                  <div class="box-icon">
-                    <i class="fa-solid fa-handshake"></i>
+                  <div class="mb-3">
+                    <input class="form-control" id="exampleFormControlInput1" placeholder="Họ và Tên" />
                   </div>
-                  <div class="box-content">
-                    <h3>CÓ NHIỀU CƠ HỘI VIỆC LÀM</h3>
-                    <p>
-                      Thị trường trong và ngoài nước luôn "khát" nguồn nhân lực.
-                      Tính đến năm 2021 Việt Nam thiếu 450000 ngành CNTT.
-                    </p>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
                   </div>
-                </div>
-                <div class="introduce3-box">
-                  <div class="box-icon">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                  <div class="mb-3">
+                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                      placeholder="Số điện thoại" />
                   </div>
-                  <div class="box-content">
-                    <h3>LƯƠNG CAO NHIỀU ĐÃI NGỘ</h3>
-                    <p>
-                      Lương của ngành CNTT luôn nằm trong TOP các ngành lương cao
-                      trên Thế Giới.
-                    </p>
+                  <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Trình độ</option>
+                      <option value="1">Học sinh</option>
+                      <option value="2">Sinh viên</option>
+                      <option value="3">Đi làm</option>
+                      <option value="3">Khác</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <a href="#">GỬI ĐĂNG KÝ</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- introduce 4 -->
-        <div id="introduce4">
-          <p>Bạn có đam mê với nghề lập trình</p>
-          <h3>NHƯNG KHÔNG BIẾT BẮT ĐẦU TỪ ĐÂU?</h3>
-          <div class="box-introduce4">
-            <a href="#">Nhận tư vấn lộ trình phù hợp với bạn!</a>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
